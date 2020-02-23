@@ -7,7 +7,7 @@ function addUser($user)
 }
 function editUser($user)
 {
-    $query="UPDATE users SET name='$user[name]',phone='$user[email]' WHERE id=$user[id]";
+    $query="UPDATE users SET name='$user[name]',email='$user[email]' WHERE id=$user[id]";
     return executeNonQuery($query);
 }
 function deleteUser($id)
